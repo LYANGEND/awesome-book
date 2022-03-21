@@ -1,5 +1,7 @@
 import createBook from './create-book.js';
+
 import Store from './store.js';
+
 const form = document.querySelector('.input-form');
 class MainUI {
     populateBooks = () => {
@@ -9,16 +11,13 @@ class MainUI {
         createBook(book);
       });
     }
-  
     addBook = (book) => {
      createBook(book);
     }
-  
     removeBook = (button) => {
       const parentDiv = button.parentNode;
       parentDiv.remove();
     }
-  
     clearInputs = () => {
       form.elements.title.value = '';
       form.elements.author.value = '';

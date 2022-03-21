@@ -20,4 +20,4 @@ const createBook = (book) => {
 
     booksContainer.appendChild(bookContainer);
   }
-export default createBook
+export default createBook;

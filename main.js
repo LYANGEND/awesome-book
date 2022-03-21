@@ -1,21 +1,16 @@
 /* eslint-disable max-classes-per-file */
-
 import { DateTime } from './node_modules/luxon/src/luxon.js';
 import {store,MainUI,form} from './modules/main-ui.js';
-
-
 class Book {
-  constructor(title, author) {
+  constructor (title, author) {
     this.title = title;
     this.author = author;
   }
 }
-
 const mainPage = new MainUI();
 const addBookSection = document.querySelector('.bottom-container');
 const contactSection = document.querySelector('.contact');
 const displayBookSection = document.querySelector('.top-container');
-
 // Date
 const date = document.querySelector('.date');
 setInterval(() => {
