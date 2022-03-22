@@ -11,17 +11,20 @@ class MainUI {
         createBook(book);
       });
     }
+
     addBook = (book) => {
-     createBook(book);
+      createBook(book);
     }
+
     removeBook = (button) => {
       const parentDiv = button.parentNode;
       parentDiv.remove();
     }
+
     clearInputs = () => {
       form.elements.title.value = '';
       form.elements.author.value = '';
     }
-  }
-  const store = new Store();
-export {store,MainUI,form}
+}
+const store = new Store();
+export { store, MainUI, form };
